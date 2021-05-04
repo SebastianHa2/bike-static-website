@@ -122,12 +122,13 @@ body{
 .location{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('./images/shop.JPG') center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.1), rgba(0, 0, 0, 1)), url('./images/shop.JPG') center no-repeat;
+    background-blend-mode: darken;
     background-size: cover; 
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 25rem;
 }
 
 .location h1{
@@ -166,6 +167,7 @@ body{
     display: flex;
     justify-content: space-around;
     margin-top: 6rem;
+    text-shadow: 0.2rem 0.3rem 0.4rem #000;
 }
 
 .opening-hours{
@@ -189,4 +191,143 @@ body{
 .closed{
     color: #FF0000;
 }
+
+/* SERVICES */
+
+.services{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1), #000) #000; 
+    padding: 10rem 0;
+}
+
+.section-heading{
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0.1rem 0.1rem 0.3rem #000;
+    margin-bottom: 5rem;
+}
+
+.services-wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    margin: auto;
+}
+
+.box{
+    width: 33%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.icon{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: #f87c04;
+    border-radius: 50%;
+    color: #000;
+    margin-bottom: 2rem;
+
+}
+
+.box img{
+    width: 100%;
+    height: 100%;;
+}
+
+.box h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #f87c04;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.box p {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+}
+
+.top-services-wrapper{
+    display: flex;
+}
+
+.bottom-services-wrapper{
+    display: flex;
+}
+
+/* BIKES */ 
+
+.bikes{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url('./images/bg-2.jpeg') center no-repeat; 
+    background-size: cover;
+}
+
+.stockists{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.stockists h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.stockists ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stockists ul li {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.bike-stock-wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.stock-logos{
+    height: 40rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.bike-stock{
+    color: #fff;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bike-stock ul li{
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+
 
