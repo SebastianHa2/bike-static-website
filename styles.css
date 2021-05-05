@@ -160,7 +160,7 @@ body{
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
-    padding-bottom: 25rem;
+    padding-bottom: 10rem;
     padding-top: 5rem;
     overflow: hidden;
 }
@@ -732,10 +732,11 @@ footer{
 
     .location{
         padding-top: 5rem;
+        background: #000;
     }
 
     .social-media-icon{
-        margin: 0.5rem 0;
+        margin: 0.5rem 0.5rem;
     }
 
     .contact-information-element a{
