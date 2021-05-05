@@ -8,10 +8,35 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 
 body{
     font-size: 62.5%;
+}
+
+.back-to-top{
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    position: fixed;
+    bottom: 3rem;
+    right: 4rem;
+    background-color: rgba(248, 124, 4, 0.5);
+    border-radius: 0.5rem;
+    z-index: 200;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.back-to-top:hover{
+    cursor: pointer;
+    background-color: rgba(248, 124, 4, 0.8);
 }
 
 /* HEADER */ 
@@ -22,6 +47,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('./images/header-bg.jpeg') center no-repeat; 
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .logo{
@@ -55,7 +81,7 @@ body{
     justify-content: space-around;
 }
 
-.navigation-list-item{
+.navigation-list-item a{
     font-size: 1.8rem;
     text-transform: uppercase;
     color: #fff;
@@ -79,6 +105,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .who-we-are{
@@ -135,6 +162,7 @@ body{
     font-size: 1.5rem;
     padding-bottom: 25rem;
     padding-top: 5rem;
+    overflow: hidden;
 }
 
 .location h1{
@@ -206,6 +234,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 1), #000) #000; 
     padding-bottom: 10rem;
     padding-top: 5rem;
+    overflow: hidden;
 }
 
 .section-heading{
@@ -303,6 +332,7 @@ body{
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url('./images/bg-2.jpeg') center no-repeat; 
     background-size: cover;
+    overflow: hidden;
 }
 
 .stockists{
@@ -363,6 +393,7 @@ body{
 .contact{
     min-height: 100vh;
     background: linear-gradient(#000, #000) #000;
+    overflow: hidden;
 }
 
 .social-media{
@@ -579,6 +610,13 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        opacity: 0.7;
+        transition: opacity 0.4s;
+    }
+
+    .hamburger-menu:hover{
+        opacity: 1;
+        cursor: pointer;
     }
 
     .line{
@@ -705,7 +743,7 @@ footer{
     }
 }
 
-@media(max-height: 700px) and (max-width: 950px){
+@media(max-height: 850px) and (max-width: 1000px){
     .about-us{
         height: auto;
     }

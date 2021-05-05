@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 </head>
 <body>
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+        <p>GO UP</p>
+    </div>
     <div class="header-bg">
         <header>
+            <!-- LOGO AND NAVIGATION -->
             <div class="logo">
                 <img src="./images/logo.jpg" alt="tommy-the-bikes-logo">
             </div>
@@ -22,15 +27,17 @@
             <div class="navigation">
                 <nav>
                     <ul class="navigation-list">
-                        <li class="navigation-list-item">About Us</li>
-                        <li class="navigation-list-item">Services</li>
-                        <li class="navigation-list-item">Bikes</li>
-                        <li class="navigation-list-item">Contact</li>
+                        <li class="navigation-list-item"><a href="#location">Location</a></li>
+                        <li class="navigation-list-item"><a href="#services">Services</a></li>
+                        <li class="navigation-list-item"><a href="#bikes">Bikes</a></li>
+                        <li class="navigation-list-item"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+            <!-- END OF LOGO AND NAVIGATION -->
         </header>
 
+        <!-- ABOUT US -->
         <section class="about-us">
             <div class="who-we-are">
                 <h1><span class="color">Who</span> We Are</h1>
@@ -45,10 +52,10 @@
             </div>
         </section>
     </div>
-    <section class="location">
-        <h1><span class="color">Where</span> To Find Us</h1>
-        <h3>14-15 Grays Lane,</h3>
-        <p>Dundalk, Co. Louth</p>
+    <section class="location" id="location">
+        <h1 class='animate-location'><span class="color">Where</span> To Find Us</h1>
+        <h3 class='animate-location'>14-15 Grays Lane,</h3>
+        <p class='animate-location'>Dundalk, Co. Louth</p>
         <div class="address-and-hours">
             <div class="address">
                 <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4690.1579676838655!2d-6.403792!3d54.0013736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe2fe384be276964f!2sTommy%20The%20Bikes!5e0!3m2!1sen!2sie!4v1620118390492!5m2!1sen!2sie" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
@@ -63,7 +70,10 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <!-- END OF ABOUT US -->
+
+    <!-- SERVICES -->
+    <section class="services" id='services'>
         <h2 class="section-heading">Our Services</h2>
        <div class="services-wrapper">
            <div class="top-services-wrapper">
@@ -95,6 +105,8 @@
                </div>
            </div>
        </div>
+
+       <!-- END OF SERVICES -->
 
     <!-- SMALL SCREEN SERVICES CONTAINER -->
        <div class="services-wrapper-small-screen">
@@ -129,9 +141,10 @@
                </div>
            </div>
        </div>
-
     </section>
-    <section class="bikes">
+
+    <!-- STOCK -->
+    <section class="bikes" id="bikes">
         <h2 class="section-heading">Our Stock</h2>
         <div class="stockists">
             <h2>We are proud stockists of brands like </h2>
@@ -161,18 +174,27 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <!-- END OF STOCK -->
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
         <h2 class="section-heading">Contact Us</h2>
         <div class="social-media">
-            <div class="fb social-media-icon">
-                <i class="fab fa-facebook-f"></i>
-            </div>
-            <div class=" ig social-media-icon">
-                <i class="fab fa-instagram"></i>
-            </div>
-            <div class="google social-media-icon">
-                <i class="fab fa-google"></i>
-            </div>
+            <a href="https://www.facebook.com/Tommy-the-bikes-663881623634530" target="_blank">
+                <div class="fb social-media-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/tommythebike/" target="_blank">
+                <div class=" ig social-media-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="https://www.google.com/maps/place/Tommy+The+Bikes/@54.0014357,-6.4037192,15z/data=!4m2!3m1!1s0x0:0xe2fe384be276964f?sa=X&ved=2ahUKEwjx9c_lr7LwAhUtQxUIHaNMDscQ_BIwG3oECCwQBQ" target="_blank">
+                <div class="google social-media-icon">
+                    <i class="fab fa-google"></i>
+                </div>
+            </a>
         </div>
         <div class="contact-information">
             <div class="contact-information-element phone">
@@ -187,10 +209,15 @@
             </div>
         </div>
     </section>
+    <!-- END OF CONTACT -->
+
+    
     <footer>
         <p>Designed and Created by Sebastian Haczela &copy; 2021</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
