@@ -89,7 +89,7 @@ body{
     transition: color 0.3s;
 }
 
-.navigation-list-item:hover{
+.navigation-list-item a:hover{
     cursor: pointer;
     color: #f87c04;
 }
